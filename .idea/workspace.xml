@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1341e78f-5644-4f08-a5cf-a787ce823ce1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ChordGenerator.java" afterPath="$PROJECT_DIR$/src/ChordGenerator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,9 +18,13 @@
       <file leaf-file-name="ChordGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ChordGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-380">
-              <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="539">
+              <caret line="200" column="62" lean-forward="false" selection-start-line="200" selection-start-column="62" selection-end-line="200" selection-end-column="62" />
+              <folding>
+                <element signature="method#nextMajor#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+                <element signature="method#nextMinor#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+                <element signature="method#nextDominant#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -465,9 +467,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ChordGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380">
-          <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="539">
+          <caret line="200" column="62" lean-forward="false" selection-start-line="200" selection-start-column="62" selection-end-line="200" selection-end-column="62" />
+          <folding>
+            <element signature="method#nextMajor#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+            <element signature="method#nextMinor#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+            <element signature="method#nextDominant#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
