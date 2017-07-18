@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1341e78f-5644-4f08-a5cf-a787ce823ce1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ChordException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ChordGenerator.java" afterPath="$PROJECT_DIR$/src/ChordGenerator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,18 +20,31 @@
       <file leaf-file-name="ChordGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ChordGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="200" column="62" lean-forward="false" selection-start-line="200" selection-start-column="62" selection-end-line="200" selection-end-column="62" />
+            <state relative-caret-position="460">
+              <caret line="324" column="36" lean-forward="true" selection-start-line="324" selection-start-column="36" selection-end-line="324" selection-end-column="36" />
               <folding>
+                <element signature="method#next#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
                 <element signature="method#nextMajor#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
                 <element signature="method#nextMinor#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
                 <element signature="method#nextDominant#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+                <element signature="method#nextDiminished#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+                <element signature="method#toString#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+                <element signature="method#equals#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+                <element signature="e#7065#7066#0" expanded="true" />
+                <element signature="e#7136#7137#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,6 +57,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/ChordException.java" />
         <option value="$PROJECT_DIR$/src/ChordGenerator.java" />
       </list>
     </option>
@@ -419,7 +435,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -465,14 +480,31 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ChordException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ChordGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="200" column="62" lean-forward="false" selection-start-line="200" selection-start-column="62" selection-end-line="200" selection-end-column="62" />
+        <state relative-caret-position="460">
+          <caret line="324" column="36" lean-forward="true" selection-start-line="324" selection-start-column="36" selection-end-line="324" selection-end-column="36" />
           <folding>
+            <element signature="method#next#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
             <element signature="method#nextMajor#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
             <element signature="method#nextMinor#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
             <element signature="method#nextDominant#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+            <element signature="method#nextDiminished#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+            <element signature="method#toString#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+            <element signature="method#equals#0;class#Chord#0;class#ChordGenerator#0" expanded="false" />
+            <element signature="e#7065#7066#0" expanded="true" />
+            <element signature="e#7136#7137#0" expanded="true" />
           </folding>
         </state>
       </provider>

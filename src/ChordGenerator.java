@@ -2,10 +2,14 @@ public class ChordGenerator {
 
     enum Flavor {Major, Minor, Dominant, Diminished};
 
-    private class Chord {
+    private static class Chord {
 
         private int note;
         private Flavor flavor;
+
+        Chord() {
+            this((int) (Math.random() * 12), Flavor.Major);
+        }
 
         Chord(int note, Flavor flavor) {
             this.note = modNote(note);
@@ -29,7 +33,7 @@ public class ChordGenerator {
                     return nextDiminished();
 
                 default:
-                    return null;
+                    throw new ChordException("Invalid flavor.");
             }
 
         }
@@ -83,7 +87,7 @@ public class ChordGenerator {
                     return new Chord(note + 9, Flavor.Minor);
 
                 default:
-                    return null;
+                    throw new ChordException("Invalid random case.");
             }
 
         }
@@ -120,7 +124,7 @@ public class ChordGenerator {
                     return new Chord(note + 11, Flavor.Dominant);
 
                 default:
-                    return null;
+                    throw new ChordException("Invalid random case.");
             }
 
         }
@@ -161,7 +165,7 @@ public class ChordGenerator {
                     return new Chord(note + 11, Flavor.Minor);
 
                 default:
-                    return null;
+                    throw new ChordException("Invalid random case.");
             }
 
         }
@@ -201,9 +205,125 @@ public class ChordGenerator {
                     return new Chord(note + 11, Flavor.Minor);
 
                 default:
-                    return null;
+                    throw new ChordException("Invalid random case.");
             }
         }
+
+        @Override
+        public String toString() {
+            String rtn = "";
+
+            switch (note) {
+
+                case 0:
+                    rtn += "C";
+                    break;
+
+                case 1:
+                    rtn += "C#";
+                    break;
+
+                case 2:
+                    rtn += "D";
+                    break;
+
+                case 3:
+                    rtn += "D#";
+                    break;
+
+                case 4:
+                    rtn += "E";
+                    break;
+
+                case 5:
+                    rtn += "F";
+                    break;
+
+                case 6:
+                    rtn += "F#";
+                    break;
+
+                case 7:
+                    rtn += "G";
+                    break;
+
+                case 8:
+                    rtn += "G#";
+                    break;
+
+                case 9:
+                    rtn += "A";
+                    break;
+
+                case 10:
+                    rtn += "A#";
+                    break;
+
+                case 11:
+                    rtn += "B";
+                    break;
+
+                default:
+                    throw new ChordException("Invalid note.");
+
+            }
+
+            rtn += " ";
+
+            switch (flavor) {
+
+                case Major:
+                    rtn += "Maj";
+                    break;
+
+                case Minor:
+                    rtn += "Min";
+                    break;
+
+                case Dominant:
+                    rtn += "7";
+                    break;
+
+                case Diminished:
+                    rtn += "Dim";
+                    break;
+
+                default:
+                    throw new ChordException("Invalid flavor.");
+
+            }
+
+            return rtn;
+
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (!(o instanceof Chord)) {
+                return false;
+            } else {
+                return equals((Chord) o);
+            }
+        }
+
+        private boolean equals(Chord o) {
+            return (note == o.note) && (flavor == o.flavor);
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        Chord initial = new Chord(0, Flavor.Major);
+        Chord current = initial;
+
+        do {
+            System.out.println(current);
+            current = current.next();
+        } while (!current.equals(initial));
+
+        System.out.println(current);
+
 
     }
 
