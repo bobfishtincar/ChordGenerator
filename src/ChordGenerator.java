@@ -1,21 +1,18 @@
 public class ChordGenerator {
 
-    public enum Flavor {Major, Minor, Dominant, Diminished, HalfDiminished};
+    enum Flavor {Major, Minor, Dominant, Diminished};
 
     private class Chord {
 
         private int note;
         private Flavor flavor;
-        private int rando;
-        private static final int MAX_VALUE = 1000;
 
-        public Chord(int note, Flavor flavor) {
+        Chord(int note, Flavor flavor) {
             this.note = note;
             this.flavor = flavor;
-            this.rando = (int) Math.random() * MAX_VALUE;
         }
 
-        public Chord next() {
+        Chord next() {
 
             switch (flavor) {
 
@@ -31,20 +28,35 @@ public class ChordGenerator {
                 case Diminished:
                     return null;
 
-                case HalfDiminished:
-                    return null;
-
                 default:
                     return null;
             }
 
         }
 
+        private int modNote(int note) {
+            return note % 12;
+        }
+
         private Chord nextMajor() {
 
-            int numNext = 8;
+            // assume C major
+            // C
+            // C#
+            // D
+            // D#
+            // E
+            // F
+            // F#
+            // G
+            // G#
+            // A min
+            // A#
+            // B
 
-            switch (rando % numNext) {
+            int rando = 8;
+
+            switch (rando) {
 
                 case 0:
                     return new Chord(note, Flavor.Minor);
@@ -59,5 +71,6 @@ public class ChordGenerator {
         }
 
     }
+
 
 }
